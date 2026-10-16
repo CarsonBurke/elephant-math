@@ -1,0 +1,56 @@
+window.math-picker {
+    background: #1e1e2e;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 16px;
+}
+.math-picker > box { padding: 16px; }
+.math-picker entry {
+    background: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 9px;
+    padding: 10px 12px;
+    font-size: 16px;
+    box-shadow: none;
+}
+.math-picker entry:focus-within { border-color: #89b4fa; }
+.math-picker button, .math-picker dropdown > button {
+    background: transparent;
+    color: #bac2de;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    padding: 7px 9px;
+    box-shadow: none;
+    min-height: 20px;
+}
+.math-picker button:hover { background: #313244; color: #cdd6f4; }
+.math-picker button:focus-visible { outline: 2px solid #89b4fa; outline-offset: -2px; }
+.math-picker .scopes button { font-size: 12px; padding: 6px 9px; }
+.math-picker .scopes button:checked { background: #313b55; color: #b4d0ff; }
+.math-picker dropdown { font-size: 12px; }
+.math-picker dropdown > button { background: #262637; padding: 6px 8px; }
+.math-picker gridview { background: transparent; }
+.math-picker gridview > child {
+    padding: 6px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    background: transparent;
+}
+.math-picker gridview > child:hover { background: #2a2b40; }
+.math-picker gridview > child:selected { background: #313b55; border-color: #89b4fa; }
+.math-picker gridview > child:focus-visible { outline: 2px solid #b4d0ff; outline-offset: -3px; }
+.math-picker .glyph {
+    font-family: "DejaVu Math TeX Gyre", "STIX Two Math", "Noto Sans Math", "DejaVu Sans";
+    font-size: 34px;
+}
+.math-picker .favorite-marker { color: #f9e2af; margin: 1px; }
+.math-picker .details { border-top: 1px solid #36364c; padding-top: 12px; }
+.math-picker .symbol-name { font-size: 14px; font-weight: 600; }
+.math-picker .metadata { font-family: monospace; font-size: 11px; color: #9399b2; }
+.math-picker .muted { color: #9399b2; font-size: 11px; }
+.math-picker .empty-title { font-size: 16px; font-weight: 600; }
+.math-picker button.primary { background: #89b4fa; color: #1e1e2e; font-weight: 600; }
+.math-picker button.primary:hover { background: #b4d0ff; }
+.math-picker button:disabled { opacity: 0.35; }
+.math-picker .error { color: #f38ba8; font-size: 12px; }
